@@ -43,9 +43,9 @@
 
     const pieniL = prompt("Anna pieni luku");
     const isoL = prompt("Anna iso luku");
-    function randomNumber(min, max) {
-      return Math.floor(Math.random() * (isoL - pieniL + 1) ) + pieniL;
-    }
+
+      const randomNumber = Math.floor(Math.random() * ((+isoL) - (+pieniL) ) ) + (+pieniL);
+
 
   const guesses = document.querySelector('.guesses');
   const lastResult = document.querySelector('.lastResult');
