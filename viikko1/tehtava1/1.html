@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+  'use strict';
+
+  let height = prompt('Your height? (m)');
+  let weight = prompt('Your weight? (kg)');
+  let BMI = weight / height / height;
+
+  if (BMI <= 0) {
+    document.write('Undefined')
+  }
+  
+  else {
+    document.write('Your BMI is ' + BMI)
+  }
+  
+</script>
+
+</body>
+</html>

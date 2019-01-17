@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+'use strict';
+
+    let c = prompt("Anna osoittaja: ");
+    let d = prompt("Anna nimittäjä: ");
+
+let gcd = function(a, b) {
+  if ( ! b) {
+    return a;
+  }
+
+  return gcd(b, a % b);
+};
+
+    const e = gcd(c,d);
+
+    document.write("Sievenetty tuloksesi on: ", c/e, "/", d/e);
+
+
+</script>
+</body>
+</html>
