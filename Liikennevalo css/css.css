@@ -25,7 +25,6 @@ html{
     margin: 0 auto;
     position: absolute;
     top: -20px;
-    margin-left: 0px;
     border-radius: 50%;
     z-index: -1;
 }
@@ -54,13 +53,13 @@ html{
     border-radius:55%;
     background:darkorange;
     opacity:0.8;
-    box-shadow: 0px 0px 40px 10px darkorange;
+    box-shadow: 0 0 40px 10px darkorange;
 }
 
 .ground {
     background-color: green;
     width: 3000px;
-    height: 600px;
+    height: 700px;
     position: absolute;
     top: 635px;
     left: -1250px;
@@ -82,7 +81,7 @@ html{
 
 .box {
     position: absolute;
-    top: 600px;
+    top: 700px;
     left: -800px;
     width: 300px;
     height: 400px;
