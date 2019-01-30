@@ -41,6 +41,11 @@
     object-fit: contain;
     width: 100%;
 }
+.kuva1 {
+    padding-top: 100px;
+    height: 90%;
+    width: 100%;
+}
 
 .flexbox {
     text-align: center;
