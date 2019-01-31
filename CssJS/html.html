@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p>🎈</p>
+<script>
+    'use strict'
+
+    let b = document.querySelector("p");
+    let size;
+    function setSize(newSize) {
+        size = newSize;
+        b.style.fontSize = size + "px";
+    }
+    setSize(40);
+    function handleArrow(event) {
+        if (event.key == "ArrowUp") {
+            if (size > 100) {
+                b.textContent = "💥";
+                document.body.removeEventListener("keydown", handleArrow);
+            } else {
+                setSize(size * 1.2);
+                event.preventDefault();
+            }
+        } else if (event.key == "ArrowDown") {
+            setSize(size * 0.8);
+            event.preventDefault();
+        }
+    }
+    document.body.addEventListener("keydown", handleArrow);
+</script>
