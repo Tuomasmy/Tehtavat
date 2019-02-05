@@ -1,0 +1,13 @@
+html {
+    background: url("field.png") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    z-index: -1;
+}
+
+.football {
+    background-image: url("football.png");
+    z-index: -1;
+}
